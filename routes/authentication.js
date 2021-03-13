@@ -17,7 +17,11 @@ router.post("/register", function (req, res, next) {
     });
     user.save((err) => {
       if (err) {
-        res.json({ success: false, message: "You must Provided Correct  e-mail" });
+        console.log(err);
+        res.json({
+          success: false,
+          message: err,
+        });
       } else {
         res.json({ success: false, message: "Success" });
       }

@@ -1,0 +1,23 @@
+
+  <form class="col" >
+    <div class="col-6">
+      <label for="inputEmail4" class="form-label">Email*</label>
+      <input type="email" name="email" formControlName = "email" class="form-control" id="inputEmail4"  placeholder="email" autocomplete="off" />
+    </div>
+    <div class="col-6">
+      <label for="inputPassword4" class="form-label">Username*</label>
+      <input type="password" name="username" class="form-control" id="inputPassword4"  formControlName="username" placeholder="username" autocomplete="off" />
+    </div>
+    <div class="col-6">
+      <label for="inputPassword4" class="form-label">Password*</label>
+      <input type="password"  name="password" class="form-control" id="inputPassword4" placeholder="password" formControlName = "password"  autocomplete="off"/>
+    </div>
+    <div class="col-6">
+        <label for="inputPassword4" class="form-label">Re-EnterPassword*</label>
+        <input type="password"  name="confirm" class="form-control" id="inputPassword4" placeholder="password" formControlName = "confirm"  autocomplete="off"/>
+      </div>
+    <div class="col-4 mt-4">
+      <button type="submit"  class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+  <p>Username:{{form.controls.username.value}}</p>
